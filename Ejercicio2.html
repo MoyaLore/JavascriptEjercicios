@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Lanzamiento de dados</title>
+    <!-- Enlazar el archivo CSS desde la carpeta "css" -->
+    <link rel="stylesheet" href="./css/Ejercicio2.css"> 
+</head>
+<body>
+    <h1>Ejercicio 2: Lanzamiento de dados</h1>
+    
+    <div class="dados-container">
+        <img id="dado1" src="img/1.png" alt="Dado 1">
+        <img id="dado2" src="img/1.png" alt="Dado 2">
+    </div>
+    
+    <button id="lanzar">Lanzar Dados</button>
+
+    <!-- Tabla principal (muestra la tirada actual) -->
+    <table>
+        <thead>
+            <tr>
+                <th>Dado 1</th>
+                <th>Dado 2</th>
+                <th>Suma</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="valorDado1">1</td>
+                <td id="valorDado2">1</td>
+                <td id="resultado">Suma: 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="resultados-container">
+        <h2>Historial de Resultados</h2>
+        <!-- Tabla para guardar el historial de todas las tiradas -->
+        <table id="resultadosTabla">
+            <thead>
+                <tr>
+                    <th>Dado 1</th>
+                    <th>Dado 2</th>
+                    <th>Suma</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se agregarán los resultados -->
+            </tbody>
+        </table>
+    </div>
+
+    <button id="reset" class="reset-button">Resetear Resultados</button>
+
+    <!-- Enlazar el archivo JavaScript desde la carpeta "javascript" -->
+    <script src="javascript/Ejercicio2.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego del Ahorcado</title>
+  <!-- Enlazar el archivo CSS desde la carpeta "css" -->
+  <link rel="stylesheet" href="css/ejercicio4.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Juego del Ahorcado</h1>
+    <div class="word" id="wordDisplay">Cargando...</div>
+    <div class="input-container">
+      <input type="text" id="letterInput" maxlength="1">
+      <button id="guessButton">Adivinar</button>
+    </div>
+    <div class="guesses">
+      <div>Intentos restantes: <span id="attempts">6</span></div>
+      <div>Letras adivinadas: <span id="guessedLetters"></span></div>
+      <div class="error">Letras incorrectas: <span id="wrongLetters"></span></div>
+    </div>
+    <div class="message" id="message"></div>
+  </div>
+
+  <!-- Enlazar el archivo JavaScript desde la carpeta "javascript" -->
+  <script src="javascript/ejercicio4.js"></script>
+</body>
+</html>
